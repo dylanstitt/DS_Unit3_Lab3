@@ -30,11 +30,14 @@ def MergeSort(n):
     return new
 
 def main():
-    nums = list(range(50))
-    shuffle(nums)
-    print(nums)
-    nums = MergeSort(nums)
-    print(nums)
+    nums1 = [6,2,5,8,3,4,8]
+    nums2 = [1,2,3,4,5,6,7,8]
+    nums3 = [8,2,6,0,1,3]
+
+    for num_list in [nums1, nums2, nums3]:
+        print(f"\nOriginal: {num_list}")
+        new = MergeSort(num_list)
+        print(f"Sorted: {new}\n")
 
 if __name__ == '__main__':
     main()
